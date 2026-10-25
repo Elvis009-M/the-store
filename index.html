@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>My Online Store - Best Quality Products & Fast Checkout</title>
+    <meta name="title" content="My Online Store - Best Quality Products & Fast Checkout">
+    <meta name="description" content="Discover amazing products at unbeatable prices. Shop securely online with instant Paystack checkout and fast delivery.">
+    <meta name="keywords" content="ecommerce, online shopping, buy online, ghana store, paystack checkout">
+    <meta name="author" content="Gideon Owusu Boateng">
+    <link rel="canonical" href="https://yourdomain.com/index.html">
+
+    <!-- Open Graph / Facebook / WhatsApp Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/index.html">
+    <meta property="og:title" content="My Online Store - Shop Quality Products">
+    <meta property="og:description" content="Discover amazing products at unbeatable prices. Secure payment and instant order confirmation.">
+    <meta property="og:image" content="https://yourdomain.com/assets/img/store-banner.jpg">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://yourdomain.com/index.html">
+    <meta name="twitter:title" content="My Online Store">
+    <meta name="twitter:description" content="Discover amazing products at unbeatable prices.">
+    <meta name="twitter:image" content="https://yourdomain.com/assets/img/store-banner.jpg">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- FontAwesome for WhatsApp Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Structured Data (JSON-LD) for Google SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "My Online Store",
+      "url": "https://yourdomain.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://yourdomain.com/index.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <header>
+    <h1 id="store-title">🛍️ The STORE</h1>
+    <nav>
+        <button class="theme-toggle" onclick="toggleTheme()">🌙 Mode</button>
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart <span id="cart-count">0</span></a>
+    </nav>
+</header>
+
+    <main class="container">
+        <h2>Available Products</h2>
+        <div id="loading" style="margin-top: 20px; font-weight: bold;">Loading products from Google Sheets...</div>
+        <div class="product-grid" id="product-grid"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Online Store. All rights reserved.</p>
+        <a href="https://emakk.vercel.app" style="text-decoration: none; font-size: large; font-weight: bold;"> Developed By Emakk Solutions.</a>
+    </footer>
+
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/233533038769?text=Hello,%20I%20have%20an%20inquiry%20about%20your%20products." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout & Cart - My Online Store</title>
+    <meta name="robots" content="noindex, follow"> <!-- Prevent cart indexing, keep checkout clean -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Paystack Inline JS SDK -->
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>🛍️ StoreFront</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart <span id="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Your Shopping Cart</h2>
+        <div id="cart-items" style="margin: 20px 0;"></div>
+        
+        <div id="checkout-section" style="background: white; padding: 25px; border-radius: 8px; margin-top: 20px; display:none; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+            <h3>Customer Details for Secure Checkout</h3>
+            <form id="checkout-form" style="margin-top: 15px; display: flex; flex-direction: column; gap: 12px; max-width: 450px;">
+                <input type="text" id="cust-name" placeholder="Full Name" required style="padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
+                <input type="email" id="cust-email" placeholder="Email Address (for instant receipt)" required style="padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
+                <input type="tel" id="cust-phone" placeholder="Phone Number (+233...)" required style="padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
+                <button type="submit" style="background: #27ae60; font-size: 16px; padding: 12px;">Pay Now with Paystack</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Online Store. Secure Payments by Paystack.</p>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+    <script>
+        renderCartPage();
+    </script>
+</body>
+</html>
